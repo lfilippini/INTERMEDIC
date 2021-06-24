@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor{
+ display: grid; 
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: repeat(4, auto);
+ grid-template-areas:"header-1              header-2              header-3"   
+                     "botonera-principal    botonera-principal    botonera-principal"
+                     "contenedor-calendario contenedor-calendario contenedor-calendario"
+                     "footer-1              footer-2              footer-3";   
+}
+
+.contenedor .header-1{
+    grid-area: header-1;
+}
+
+.contenedor .header-2{
+    grid-area: header-2;
+}
+
+.contenedor .header-3{
+    grid-area: header-3;
+}
+
+.contenedor .botonera-principal{
+    grid-area: botonera-principal;
+}
+
+.contenedor .contenedor-calendario{
+    grid-area: contenedor-calendario;
+    width: 80%;
+    padding: 5em;
+    display: block;
+    margin: auto;   
+}
+
+#titulo-calendario {
+    color: #08088A;
+    height: 3em;
+    text-align: center;  
+}
+
+.contenedor .footer-1{
+    grid-area: footer-1;
+}
+
+.contenedor .footer-2{
+    grid-area: footer-2;
+}
+
+.contenedor .footer-3{
+    grid-area: footer-3;
+}
+
+.contenedor .header-1 {
+    background-color: white;
+    display: inline;
+    box-sizing: border-box;
+    padding: 7% 10%;
+    margin-bottom: 3%;
+}
+
+@media all and (min-width: 600px) and (max-width: 1023px){
+    .contenedor{
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:"header-1              header-2              header-3"   
+                            "botonera-principal    botonera-principal    botonera-principal"
+                            "contenedor-calendario contenedor-calendario contenedor-calendario"
+                            "footer-1              footer-2              footer-3";   
+       }
+
+} 
+/*Fin Responsive 600/1023*/
+
+@media all and (max-width: 599px){
+    .contenedor{
+        display: grid; 
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas:
+                            "header-1"
+                            "header-2"
+                            "header-3"
+                            "botonera-principal"
+                            "contenedor-calendario"
+                            "footer-1"        
+                            "footer-2"      
+                            "footer-3";
+    }
+    
+    .contenedor .redes-sociales{
+        text-align: center;
+    }
+
+    .contenedor .contenedor-calendario{
+        padding: 2em;
+         
+    }
+   
+}

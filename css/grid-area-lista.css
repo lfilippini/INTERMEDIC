@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor{
+ display: grid; 
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: repeat(4, auto);
+ grid-template-areas:"header-1              header-2              header-3"   
+                     "botonera-principal    botonera-principal    botonera-principal"
+                     "titulo-enfermedades   titulo-enfermedades   titulo-enfermedades"
+                     "contenedor-buscador   contenedor-buscador   contenedor-buscador"
+                     "enfermedad-1          enfermedad-1-1        enfermedad-1-1"
+                     "enfermedad-2          enfermedad-2-1        enfermedad-2-1"
+                     "enfermedad-3          enfermedad-3-1        enfermedad-3-1"
+                     "enfermedad-4          enfermedad-4-1        enfermedad-4-1"
+                     "enfermedad-5          enfermedad-5-1        enfermedad-5-1"
+                     "footer-1              footer-2              footer-3";   
+}
+
+.contenedor .header-1{
+    grid-area: header-1;
+}
+
+.contenedor .header-2{
+    grid-area: header-2;
+}
+
+.contenedor .header-3{
+    grid-area: header-3;
+}
+
+.contenedor .botonera-principal{
+    grid-area: botonera-principal;
+}
+
+.contenedor .titulo-enfermedades{
+    grid-area: titulo-enfermedades;
+    color: #08088A;
+    margin: 0.625em;
+    padding: 0.625em;
+    text-align: center;
+}
+
+.contenedor .contenedor-buscador{
+    grid-area: contenedor-buscador;
+}
+
+.contenedor-buscador a {
+    padding-left: 10em;
+}
+
+.contenedor .enfermedad-1{
+    margin: 5%;
+    grid-area: enfermedad-1;
+}
+
+.contenedor .header-1 {
+    background-color: white;
+    display: inline;
+    box-sizing: border-box;
+    padding: 7% 10%;
+    margin-bottom: 3%;
+}
+
+.contenedor .enfermedad-1-1{
+    grid-area: enfermedad-1-1;
+    text-align: justify;
+    padding-right: 5%;
+}
+
+.contenedor .enfermedad-2{
+    margin: 5%;
+    grid-area: enfermedad-2;
+}
+
+.contenedor .enfermedad-2-1{
+    grid-area: enfermedad-2-1;
+    text-align: justify;
+    padding-right: 5%;
+}
+
+.contenedor .enfermedad-3{
+    margin: 5%;
+    grid-area: enfermedad-3;
+}
+
+.contenedor .enfermedad-3-1{
+    grid-area: enfermedad-3-1;
+    text-align: justify;
+    padding-right: 5%;
+}
+.contenedor .enfermedad-4{
+    margin: 5%;
+    grid-area: enfermedad-4;
+    
+}
+
+.contenedor .enfermedad-4-1{
+    grid-area: enfermedad-4-1;
+    text-align: justify;
+    padding-right: 5%;
+}
+
+.contenedor .enfermedad-5{
+    margin: 5%;
+    grid-area: enfermedad-5;
+}
+
+.contenedor .enfermedad-5-1{
+    grid-area: enfermedad-5-1;
+    text-align: justify;
+    padding-right: 5%;
+}
+
+.contenedor .buscador-1{
+    width: calc(23% - 0.125em);
+    text-align: end;
+    grid-area: buscador-1;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.contenedor .buscador-2{
+    width: calc(75% - 0.125em);
+    grid-area: buscador-2;
+}
+
+
+.contenedor .imagen-listado{
+    border-radius: 0.5em;
+    margin: 0.625em; 
+    width: 15.625em;
+    height: 9.375em;
+}
+
+.contenedor .redes-sociales{
+    background-color: white;
+    grid-area: redes-sociales;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.contenedor .redes-sociales a{
+    text-decoration: none;
+}
+
+.contenedor .footer-1{
+    grid-area: footer-1;
+}
+
+.contenedor .footer-2{
+    grid-area: footer-2;
+}
+
+.contenedor .footer-3{
+    grid-area: footer-3;
+}
+
+.botones {
+    text-decoration: none;
+    padding: 0.625em;
+    font-weight: 600;
+    font-size: 1.25em;
+    color: #ffffff;
+    background-color: #0080ff;
+    border-radius: 0.375em;
+    cursor: pointer;
+}
+  
+.botones:hover {
+    color: #0080ff;
+    background-color: #ffffff;
+}
+
+@media all and (min-width: 600px) and (max-width: 1023px){
+
+    .buscador-2 input {
+    width: 80%;
+    margin-left: 0;
+    }
+
+    .contenedor-buscador a {
+        padding-left: 8em;
+    }
+    .contenedor .imagen-listado {
+        width: 80%;
+        height: 75%;
+    }
+
+    .botones{
+        width: 25%;
+        font-size: inherit;
+    }
+
+} /*Fin Responsive 600/1023*/
+
+@media all and (max-width: 599px){
+
+    .contenedor{
+        display: grid; 
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(19, auto);
+        grid-template-areas:
+        "header-1"
+        "header-2"
+        "header-3"
+        "botonera-principal "
+        "titulo-enfermedades"
+        "contenedor-buscador"    
+        "enfermedad-1"        
+        "enfermedad-1-1"
+        "enfermedad-2"        
+        "enfermedad-2-1"
+        "enfermedad-3"        
+        "enfermedad-3-1"
+        "enfermedad-4"        
+        "enfermedad-4-1"
+        "enfermedad-5"        
+        "enfermedad-5-1"
+        "footer-1"        
+        "footer-2"      
+        "footer-3";
+        }
+
+    .buscador-2 input {
+        width: 80%;
+        margin-left: 0;
+    }
+    
+    .contenedor-buscador a {
+        padding-left: 3em;
+    }
+        
+    .contenedor .imagen-listado {
+        width: 80%;
+        height: 75%;
+    }
+
+    .contenedor .enfermedad-1-1{
+        padding: 1em 2em;
+    }        
+    
+    .contenedor .enfermedad-2-1{
+        padding: 1em 2em;
+    }
+
+    .contenedor .enfermedad-3-1{
+        padding: 1em 2em;
+    }
+
+    .contenedor .enfermedad-4-1{
+        padding: 1em 2em;
+    }
+
+    .contenedor .enfermedad-5-1{
+        padding: 1em 2em;
+    }
+
+    .contenedor .imagen-listado {
+        display: block;
+        margin: auto;
+    }
+        
+    .botones{
+        width: 25%;
+        margin-left: 35%;
+        margin-right: 35%;
+        font-size: inherit;
+    }        
+}

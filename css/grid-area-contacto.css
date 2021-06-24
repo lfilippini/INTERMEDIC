@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor{
+ display: grid; 
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: repeat(4, auto);
+ grid-template-areas:"header-1              header-2              header-3"   
+                     "botonera-principal    botonera-principal    botonera-principal"
+                     "formularios-contacto  formularios-contacto  datos-contacto"
+                     "formularios-contacto  formularios-contacto  redes-sociales"
+                     "ubicacion             ubicacion             ubicacion"
+                     "footer-1              footer-2              footer-3";   
+}
+
+.contenedor .header-1{
+    grid-area: header-1;
+}
+
+.contenedor .header-2{
+    grid-area: header-2;
+}
+
+.contenedor .header-3{
+    grid-area: header-3;
+}
+
+.contenedor .botonera-principal{
+    grid-area: botonera-principal;
+}
+
+.contenedor .formularios-contacto{
+    background-color: white;
+    grid-area: formularios-contacto;
+    padding: 10%;
+    display: block;
+    margin: auto;
+}
+
+.contenedor .datos-contacto{
+    background-color: white;
+    grid-area: datos-contacto;
+    padding-top: 20.5%;
+}
+
+.contenedor .redes-sociales{
+    background-color: white;
+    grid-area: redes-sociales;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.contenedor .header-1 {
+    background-color: white;
+    display: inline;
+    box-sizing: border-box;
+    padding: 7% 10%;
+    margin-bottom: 3%;
+}
+
+.contenedor .redes-sociales a{
+    text-decoration: none;
+}
+
+.contenedor .ubicacion{
+    grid-area: ubicacion;  
+}
+
+#titulo-contacto {
+    color: #08088A;
+    text-align: center;
+}
+
+#titulo-datos {
+    color: #08088A;
+}
+
+#titulo-mapa {
+    color: #08088A;
+    height: 5em;
+    text-align: center;
+    padding: 5%;
+}
+
+.contenedor .footer-1{
+    grid-area: footer-1;
+}
+
+.contenedor .footer-2{
+    grid-area: footer-2;
+}
+
+.contenedor .footer-3{
+    grid-area: footer-3;
+}
+
+.field{
+    border: solid 0.0625em #ccc;
+    padding: 0.625em;
+    width: 31.875em;
+}
+
+.mapa-ubicacion{
+    width: 75em;
+    height: 22em;
+    padding-bottom: 2em;
+}
+
+#mensaje {
+    color: red;
+}
+
+.botones {
+    text-decoration: none;
+    padding: 0.625em;
+    font-weight: 600;
+    font-size: 1.25em;
+    color: #ffffff;
+    background-color: #0080ff;
+    border-radius: 0.375em;
+    cursor: pointer;
+}
+  
+  .botones:hover {
+    color: #0080ff;
+    background-color: #ffffff;
+}
+
+@media all and (min-width: 600px) and (max-width: 1023px){
+.contenedor{
+ grid-template-rows: repeat(7, auto);
+ grid-template-areas:"header-1              header-2              header-3"   
+                     "botonera-principal    botonera-principal    botonera-principal"
+                     "formularios-contacto  formularios-contacto  formularios-contacto"
+                     "datos-contacto        datos-contacto        datos-contacto"       
+                     "redes-sociales        redes-sociales        redes-sociales"
+                     "ubicacion             ubicacion             ubicacion"
+                     "footer-1              footer-2              footer-3";   
+}
+
+.contenedor .formularios-contacto{
+    display: block;
+    margin: auto;
+    padding: 1em 2em;
+}
+
+.contenedor .datos-contacto{
+    display: block;
+    margin: auto;
+    padding: 1em 2em;
+
+}
+
+.contenedor .redes-sociales{
+    text-align: center;
+}
+
+#titulo-mapa{
+    padding: 0;
+    padding-top: 1em;
+}
+
+.mapa-ubicacion{
+    width: 45em;
+    height: 22em;
+    padding-bottom: 2em;
+}
+
+} /*Fin Responsive 600/1023*/
+
+@media all and (max-width: 599px){
+    .contenedor{
+        grid-template-rows: repeat(11, auto);
+        grid-template-columns: 1fr;
+        grid-template-areas:
+                            "header-1"
+                            "header-2"
+                            "header-3"
+                            "botonera-principal"
+                            "formularios-contacto"
+                            "datos-contacto"       
+                            "redes-sociales"
+                            "ubicacion"
+                            "footer-1"        
+                            "footer-2"      
+                            "footer-3";  
+}
+
+.contenedor .formularios-contacto{
+    display: block;
+    margin: auto;
+    padding: 1em 2em;  
+    width: 70%;
+}
+    
+.contenedor .datos-contacto{
+    text-align: center;
+    padding: 1em 2em;  
+}
+    
+.contenedor .redes-sociales{
+    text-align: center;
+}
+    
+#titulo-mapa{
+    padding: 0;
+    padding-top: 1em;
+}
+.contenedor .formularios-contacto .field {
+    width: 90%;
+}
+
+.mapa-ubicacion{
+    width: 25em;
+    height: 22em;
+    padding-bottom: 2em;
+}
+          
+}

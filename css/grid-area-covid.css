@@ -1,0 +1,492 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor{
+ display: grid; 
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: repeat(16, auto);
+ grid-template-areas:"header-1              header-2              header-3"   
+                     "botonera-principal    botonera-principal    botonera-principal"
+                     "titulo-covid          titulo-covid          titulo-covid"
+                     "imagen-covid-1        descrip-covid         descrip-covid"
+                     "titulo-form-covid     titulo-form-covid     titulo-form-covid"
+                     "hola-usuario          formulario            formulario"
+                     "titulo-sintomas       formulario            formulario"
+                     "sintomas-1            formulario            formulario"
+                     "sintomas-2            formulario            formulario"
+                     "vacio                 formulario            formulario"
+                     "titulo-medidas        titulo-medidas        titulo-medidas"
+                     "medidas-precaucion    medidas-precaucion    medidas-precaucion"
+                     "medidas-precaucion-2  medidas-precaucion-2  medidas-precaucion-2"
+                     "titulo-mapa           titulo-mapa           titulo-mapa"
+                     "hospital-covid        ubicacion             ubicacion"
+                     "footer-1              footer-2              footer-3";   
+}
+
+.contenedor .header-1{
+    grid-area: header-1;
+}
+
+.contenedor .header-2{
+    grid-area: header-2;
+}
+
+.contenedor .header-3{
+    grid-area: header-3;
+}
+
+.contenedor .botonera-principal{
+    grid-area: botonera-principal;
+}
+
+.contenedor .titulo-covid{
+    grid-area: titulo-covid;
+}
+
+.titulo-covid{
+    color: #08088A;
+    text-align: center;
+    padding: 3%;
+}
+
+.contenedor .imagen-covid-1 {
+    grid-area: imagen-covid-1 ;
+    padding: 3%;
+}
+
+#imagen-covid{
+    height: 15.625em;
+    border-radius: 1em;
+}
+
+.contenedor .header-1 {
+    background-color: white;
+    display: inline;
+    box-sizing: border-box;
+    padding: 7% 10%;
+    margin-bottom: 3%;
+}
+
+.contenedor .descrip-covid {
+    grid-area: descrip-covid;
+    padding: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+}
+
+.contenedor .redes-sociales{
+    background-color: white;
+    grid-area: redes-sociales;
+    padding-left: 10%;
+    padding-right: 10%;    
+}
+
+.contenedor .redes-sociales a{
+    text-decoration: none;
+}
+
+.contenedor .titulo-form-covid{
+    grid-area: titulo-form-covid;
+    color: #08088A;
+    text-align: center;
+    margin-bottom: 6%;
+    margin-top: 6%;
+}
+
+.contenedor .hola-usuario {
+    grid-area: hola-usuario ;
+}
+
+.contenedor .formulario  {
+    grid-area: formulario  ;
+    padding-left: 10%;
+}
+
+.formulario .radio label{
+    display: inline-block;
+    cursor: pointer;
+    color: #000;
+    position: relative;
+    padding: 0.3125em 0.9375em 0.3125em 3.1875em;
+    font-size: 1em;
+    border-radius: 0.1875em;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+}
+
+.formulario .radio label:hover{
+    background: rgba(0,116,217,0.2);
+}
+
+.formulario .radio label:before{
+    content: "";
+    width: 0.5em;
+    height: 0.5em;
+    display: inline-block;
+    background: none;
+    position: absolute;
+    left: 1.25em;
+}
+
+#por-favor{
+    font-weight: bold;
+}
+
+.formulario input[type="radio"]:checked + label {
+    padding: 0.3125em 0.9375em;
+    background: #08088A;
+    border-radius: 0.125em;
+    color: #fff; 
+}
+
+.formulario input[type="radio"]:checked + label:before{
+    display: none;
+}
+
+#enviar-test{
+    border-radius: 0.375em;
+    display: block;
+    margin:auto;
+    width: 6.5625em;
+    height: 1.5625em;
+    margin-top: 0.3125em;
+    margin-bottom: 0.3125em;
+    background-color: #08088A;
+    color: white; 
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#enviar-test:hover{
+    color: #0080FF;
+    background-color: white;
+}
+
+
+.contenedor .sintomas-1   {
+    grid-area: sintomas-1;
+    text-align: center;
+}
+
+.contenedor .vacio   {
+    grid-area: vacio;
+}
+
+.contenedor .sintomas-1  img {
+    width: 11.25em;
+    height: 6.25em;
+}
+
+.contenedor .titulo-sintomas{
+    grid-area: titulo-sintomas;
+    color: #08088A;
+    text-align: center;
+    padding: 20%;
+}
+
+.contenedor .sintomas-1-1 img{
+    width: 30em;
+    height: 6.25em;
+    display: block;
+    margin: auto;
+    padding: 2%;
+}
+
+.contenedor .sintomas-2{
+    grid-area: sintomas-2; 
+}
+
+.contenedor .sintomas-2 img{
+    width: 16em;
+    height: 6.25em;
+    display: block;
+    margin: auto;
+    padding: 2%;
+}
+
+.contenedor .titulo-medidas {
+    grid-area: titulo-medidas;
+    color: #08088A;
+    text-align: center;
+    margin-bottom: 6%;
+    margin-top: 6%;
+}
+
+.contenedor .titulo-mapa{
+    grid-area: titulo-mapa;
+    text-align: center;
+    color: #08088A ;
+    padding: 6%;
+}
+
+.contenedor .hospital-covid{
+    grid-area: hospital-covid;
+}
+
+#imagen-hosp-italiano{
+    width: 21.875em;
+}
+
+.contenedor .medidas-precaucion{
+    grid-area: medidas-precaucion;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedor .medidas-precaucion-2{
+    grid-area: medidas-precaucion-2;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedor .medidas-precaucion img{
+    width: 10em;
+    height: 10em;
+}
+
+.contenedor .medidas-precaucion-2 img{
+    width: 10em;
+    height: 10em;
+}
+
+
+.contenedor .ubicacion{
+    grid-area: ubicacion;
+}
+
+#titulo-mapa {
+    color: #08088A;
+    text-align: center;
+    padding: 5%;
+}
+
+
+.info-hospital{
+    text-align: right;
+    line-height: 1.8;
+    padding-bottom: 10%;
+}
+
+
+.contenedor .footer-1{
+    grid-area: footer-1;
+}
+
+.contenedor .footer-2{
+    grid-area: footer-2;
+}
+
+.contenedor .footer-3{
+    grid-area: footer-3;
+}
+
+.mapa-ubicacion{
+    width: 45em;
+    height: 22em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+}
+
+.field{
+    border: solid 0.0625em #ccc;
+    padding: 0.6em;
+    width: 35em;
+}
+
+#dificultad-respirar{
+    display: none;
+}
+
+#paises-visitados{
+    display: none;
+}
+
+#mensaje-detalle {
+    color: red;
+}
+
+#mensaje-sintomas{
+    color: #08088A;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 2%;
+    margin: 2%;
+}
+
+.hola-usuario{
+    text-align: justify;
+    padding-left: 8%;
+}
+
+.botones {
+    text-decoration: none;
+    padding: 0.625em;
+    font-weight: 600;
+    font-size: 1.25em;
+    color: #ffffff;
+    background-color: #0080ff;
+    border-radius: 0.375em;
+    cursor: pointer;
+}
+  
+.botones:hover {
+  color: #0080ff;
+  background-color: #ffffff;
+}
+
+@media all and (min-width: 600px) and (max-width: 1023px){
+
+    .contenedor{
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(17, auto);
+        grid-template-areas:"header-1              header-2              header-3"   
+                            "botonera-principal    botonera-principal    botonera-principal"
+                            "titulo-covid          titulo-covid          titulo-covid"
+                            "imagen-covid-1        descrip-covid         descrip-covid"
+                            "titulo-form-covid     titulo-form-covid     titulo-form-covid"
+                            "hola-usuario          hola-usuario          hola-usuario"
+                            "formulario            formulario            formulario"
+                            "titulo-sintomas       titulo-sintomas       titulo-sintomas"
+                            "sintomas-1            sintomas-1             sintomas-1 "
+                            "sintomas-2            sintomas-2             sintomas-2 "
+                            "titulo-medidas        titulo-medidas        titulo-medidas"
+                            "medidas-precaucion    vacio                 medidas-precaucion-2"
+                            "titulo-mapa           titulo-mapa           titulo-mapa"
+                            "hospital-covid        hospital-covid           hospital-covid"
+                            "ubicacion              ubicacion             ubicacion"
+                            "footer-1              footer-2              footer-3";   
+    }
+
+       #imagen-covid {
+        width: 100%;
+        height: 60%;
+        margin: 5em 2em;
+    }
+
+    .contenedor .hola-usuario{
+        padding: 2em 2em;
+
+    }
+    .contenedor .formulario{
+        padding: 1em 2em;
+        margin: auto;
+        display: block;
+    }
+
+    .contenedor .titulo-sintomas {
+        padding: 1em 2em 2em 2em;
+    }
+
+    .contenedor .medidas-precaucion{
+        display: flex;
+        flex-direction: column;
+        padding-left: 70%;
+    }
+    
+    .contenedor .medidas-precaucion-2{
+        display: flex;
+        flex-direction: column;
+    }
+    .info-hospital{
+        text-align: center;
+    }
+
+    .hola-usuario{
+        text-align: center;
+        padding-left: 8%;
+    
+    }
+
+} /*Fin Responsive 600/1023*/
+
+@media all and (max-width: 599px){
+    .contenedor{
+        
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: repeat(21, auto);
+        grid-template-areas:"header-1 header-1"
+                            "header-2 header-2"             
+                            "header-3 header-3"   
+                            "botonera-principal botonera-principal"
+                            "titulo-covid   titulo-covid"
+                            "imagen-covid-1 imagen-covid-1"
+                            "descrip-covid descrip-covid"
+                            "titulo-form-covid titulo-form-covid"
+                            "hola-usuario hola-usuario"
+                            "formulario formulario"
+                            "titulo-sintomas titulo-sintomas"
+                            "sintomas-1 sintomas-1"
+                            "sintomas-2 sintomas-2"
+                            "titulo-medidas titulo-medidas"
+                            "medidas-precaucion medidas-precaucion-2"
+                            "titulo-mapa titulo-mapa"
+                            "hospital-covid hospital-covid"
+                            "ubicacion ubicacion"
+                            "footer-1 footer-1"
+                            "footer-2 footer-2"
+                            "footer-3 footer-3";   
+       }
+
+    .contenedor .hola-usuario{
+        padding: 2em 4.8em;
+        text-align: justify;
+    }
+
+    .contenedor .formulario{
+        padding: 1em 2em;
+        margin: auto;
+        display: block;
+    }
+    
+    .contenedor .titulo-covid{
+        text-align: center;
+    }
+
+    #imagen-covid {
+        width: 80%;
+        height: 60%;
+        margin: 5em 2em;
+    }
+
+    .contenedor .medidas-precaucion{
+        display: flex;
+        flex-direction: column;
+        padding-left: 45%;
+    }
+    
+    .contenedor .medidas-precaucion-2{
+        display: flex;
+        flex-direction: column;
+        padding-left: 25%;
+    }
+
+    #mensaje-sintomas{
+        color: #08088A;
+        font-weight: bold;
+        font-size: 1.5em;
+        padding: 0%;
+        margin: 0%;
+    }
+    
+    .field{
+        border: solid 0.0625em #ccc;
+        width: 90%;
+    }
+
+    .info-hospital{
+        text-align: center;
+    }
+
+    .mapa-ubicacion{
+        width: 30em;
+    }
+   
+}

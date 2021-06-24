@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor{
+ display: grid; 
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: repeat(5, auto);
+ grid-template-areas:"header-1                header-2                  header-3"
+                     "botonera-principal      botonera-principal        botonera-principal"   
+                     "contenedor-hospitales   contenedor-hospitales     contenedor-hospitales"
+                     "ubicacion               ubicacion                 ubicacion"
+                     "footer-1                footer-2                  footer-3";   
+}
+
+.contenedor .header-1{
+    grid-area: header-1;
+}
+
+.contenedor .header-2{
+    grid-area: header-2;
+}
+
+.contenedor .header-3{
+    grid-area: header-3;
+}
+
+.contenedor-hospitales{
+    grid-area: contenedor-hospitales;
+    padding: 2%;
+}
+
+.contenedor .botonera-principal{
+    grid-area: botonera-principal;
+}
+
+.contenedor .ubicacion{
+    grid-area: ubicacion;
+}
+
+#titulos-ubicacion {
+    color: #08088A;
+    text-align: center;
+}
+
+#titulo-mapa {
+    color: #08088A;
+    height: 2em;
+    text-align: center;
+    padding: 5%;
+}
+
+.contenedor .header-1 {
+    background-color: white;
+    display: inline;
+    box-sizing: border-box;
+    padding: 7% 10%;
+    margin-bottom: 3%;
+}
+
+.mapa-ubicacion{
+    width: 70em;
+    height: 25em;
+    padding-bottom: 3em;
+}
+
+.contenedor .footer-1{
+    grid-area: footer-1;
+}
+
+.contenedor .footer-2{
+    grid-area: footer-2;
+}
+
+.contenedor .footer-3{
+    grid-area: footer-3;
+}
+
+.contenedor-hospitales ul li{
+    list-style: none;
+    padding: 1em 2em;
+    text-align: center;
+}
+
+.contenedor-hospitales ul li a{
+    color: rgb(131, 128, 128);    
+    font-weight: bold;
+    font-size: 1.3em;	
+}
+
+.contenedor-hospitales ul li a:hover{
+    color: rgb(131, 128, 128);
+    cursor: pointer;
+}
+
+.popup .close-btn {
+    cursor:pointer;
+    position:absolute;
+    right:1.25em;
+    top:0.8em;
+    width:2em;
+    height:2em;
+    background:#337ab7;
+    color:#fff;
+    font-size:1.5625em;
+    font-weight:600;
+    line-height:2em;
+    text-align:center;
+    border-radius:50%;
+}
+
+#popup-1{
+    background-color: #4697df;
+    width: 50%;
+    height: 250px;
+    text-align: center;
+    position: fixed;
+    z-index:3;
+    top:30%;
+    left: 25%;
+    display:none;
+    color: #fff;
+    border-radius: 1em;
+    -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+#popup-1 h2{
+    padding: 3em 1em 1em 1em;
+}
+
+#popup-1 .texto{
+    padding: 1em 1.2em;
+}
+
+#popup-1 p{
+    padding-bottom: 0.8em;
+}
+
+#popup-1 a{
+    padding: 0.5em;    
+}
+
+#popup-1 a:hover{
+    cursor: pointer;
+    background-color: #3680c2;
+}
+
+#popup-2{
+    background-color: #4697df;
+    width: 50%;
+    height: 250px;
+    text-align: center;
+    position: fixed;
+    z-index:3;
+    top:30%;
+    left: 25%;
+    display:none;
+    color: #fff;
+    border-radius: 1em;
+    -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+#popup-2 h2{
+    padding: 3em 1em 1em 1em;
+}
+
+#popup-2 .texto{
+    padding: 1em 1.2em;
+}
+
+#popup-2 p{
+    padding-bottom: 0.8em;
+}
+
+#popup-2 a{
+    padding: 0.5em;   
+}
+
+#popup-2 a:hover{
+    cursor: pointer;
+    background-color: #3680c2;
+}
+
+#popup-3{
+    background-color: #4697df;
+    width: 50%;
+    height: 250px;
+    text-align: center;
+    position: fixed;
+    z-index:3;
+    top:30%;
+    left: 25%;
+    display:none;
+    color: #fff;
+    border-radius: 1em;
+    -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+#popup-3 h2{
+    padding: 3em 1em 1em 1em;
+}
+
+#popup-3 .texto{
+    padding: 1em 1.2em;
+}
+
+#popup-3 p{
+    padding-bottom: 0.8em;
+}
+
+#popup-3 a{
+    padding: 0.5em;
+}
+
+#popup-3 a:hover{
+    cursor: pointer;
+    background-color: #3680c2;
+}
+
+@media all and (min-width: 600px) and (max-width: 1023px){
+    .contenedor{
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:"header-1                header-2                  header-3"
+                     "botonera-principal      botonera-principal        botonera-principal"   
+                     "contenedor-hospitales   contenedor-hospitales     contenedor-hospitales"
+                     "ubicacion               ubicacion                 ubicacion"
+                     "footer-1                footer-2                  footer-3";   
+    }
+
+    .mapa-ubicacion{
+        width: 40em;
+        height: 25em;
+        padding-bottom: 3em;
+    }
+
+    .popup .close-btn{
+        top:0.5em;
+    }
+} 
+/*Fin Responsive 600/1023*/
+
+@media all and (max-width: 599px){
+    .contenedor{
+        display: grid; 
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, auto);
+        grid-template-areas:
+                            "header-1"
+                            "header-2"
+                            "header-3"
+                            "botonera-principal"
+                            "contenedor-hospitales" 
+                            "ubicacion"
+                            "footer-1"        
+                            "footer-2"      
+                            "footer-3";
+    }
+    
+    .contenedor .redes-sociales{
+        text-align: center;
+    }
+    .mapa-ubicacion{
+        width: 30em;
+        height: 25em;
+        padding-bottom: 3em;
+    }
+
+    #popup-1 h2 {
+        padding: 1.2em 1em .5em 1em;
+    }
+    #popup-2 h2 {
+        padding: 1.2em 1em .5em 1em;
+    }
+    #popup-3 h2 {
+        padding: 1.2em 1em .5em 1em;
+    }
+
+    .popup .close-btn {
+        top: 0.4em;
+        width: 0em;
+        height: 0em;
+    }
+
+    #popup-1{
+        height: 12.5em;
+    }
+
+    #popup-2{
+        height: 12.5em;
+    }
+
+    #popup-3{
+        height: 12.5em;
+    }
+}

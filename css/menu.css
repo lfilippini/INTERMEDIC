@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contenedor .botonera-principal .menu ul{
+	background-color: #337ab7;
+}
+.contenedor .botonera-principal .menu ul li{
+    list-style: none;
+    align-items: center;
+    color:   #ffffff;
+	font-weight: bold;	
+	padding: 1em 1em;
+	font-weight: bold;
+}
+.contenedor .botonera-principal .menu{
+    grid-auto-flow: column;
+    padding-top: 1em;
+	margin-bottom: 2%;
+}
+.contenedor .botonera-principal .menu ul li a{
+    display: block;
+	text-decoration: none;
+	color:   #fff;
+}
+.contenedor .botonera-principal .menu ul li:hover{
+	background-color: #286499;
+}
+
+.contenedor .botonera-principal .menu ul:hover{
+	cursor: pointer;
+}
+.desplegable{
+    width: 2.625em;
+    height: 2.625em;
+    background-color: #337ab7;
+    display: block;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    left: 0;
+    background-image: url(../img/hamburger.gif);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.desplegable:hover{
+    background-color: #337ab7;
+}
+
+.contenedor .botonera-principal .menu{
+    display: none;
+}
+
+.botonera-principal #menu-hamb{
+    color: #c4baba; ;
+    font-weight: bold;
+    top:0em;
+    left: 1.2em;
+    position: relative;
+    width: 3em;
+    font-size: 2.5em;
+    text-align: center;   
+}
+
+.menu-fixed {
+	position:fixed;
+	z-index:1000;
+	top:0;
+    left:0;
+    right: 0;
+	width:100%;
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+
+.contenedor .botonera-principal .menu{
+    grid-auto-flow: column;
+    padding-top: 0;
+	margin-bottom: 0;
+}
+
+.contenedor .botonera-principal .menu a:hover, a:focus {
+    background-size: 100% 2px;
+}
+
+@media screen and (min-width:64em){
+    .contenedor .botonera-principal .menu ul{
+        display: flex;
+        justify-content: center;
+    }
+    .desplegable{
+        display: none;
+    }
+    .contenedor .botonera-principal .menu{
+        display: block;
+    }
+        
+}
+
+@media screen and (min-width:37.59em) and (max-width:63.99em) {
+	.desplegable{
+		top: 0;
+    }
+
+    .botonera-principal {
+        position: fixed;
+        top: 0;
+        width: 20%;
+        height: 30%;
+        z-index: 50;
+        font-size: 0.8em;
+    }
+      
+    .menu {
+        position: relative;
+        text-align: right;
+        top: 0;
+        font-weight: bold;
+    }  
+    
+    .menu ul {
+        list-style: none;
+    }  
+        
+    .menu li {
+        position: relative;
+        margin:0;
+    }     
+
+    .menu a {
+        line-height: 4em;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.2em;
+        color: rgba(#FFF, 0.35);
+        display: block;
+        transition: all ease-out 300ms;
+    }
+
+    .contenedor .botonera-principal .menu a {
+        text-decoration: none;
+        background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 14%, rgba(133,133,134,1) 100%);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .5s;
+    }
+          
+}
+
+@media screen and (max-width: 37.49em){
+	.desplegable{
+        top: 0em;
+    }
+
+    .botonera-principal {
+        position: fixed;
+        top: 0;
+        width: 25%;
+        height: 40%;
+        z-index: 50;
+        font-size: 0.8em;
+    }
+      
+    .menu {
+        position: relative;
+        text-align: right;
+        top: 0;
+        font-weight: bold;
+    }  
+    
+    .menu ul {
+        list-style: none;
+    }  
+        
+    .menu li {
+        position: relative;
+        margin:0;
+    }     
+
+    .menu a {
+        line-height: 4em;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.2em;
+        color: rgba(#FFF, 0.35);
+        display: block;
+        transition: all ease-out 300ms;
+    }
+
+    .contenedor .botonera-principal .menu a {
+        text-decoration: none;
+        background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 14%, rgba(133,133,134,1) 100%);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .5s;
+    }
+	
+}

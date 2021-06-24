@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/grid-area-lista.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/36c47e5d47.js" crossorigin="anonymous"></script>
+    <title>Intermedic</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="header-1">
+            <img class="logo-img" src="img/logo-blanco.png" alt="imagen de logo">
+        </div>
+        <div class="header-2">
+            <label><input list="browsers" name="myBrowser"></label>
+            <datalist id="browsers">
+                <option value="Dengue">
+                <option value="Varicela">
+                <option value="Covid-19">
+                <option value="Neumonía">
+                <option value="Sarampión">
+            </datalist>
+            <a href="#">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+        <div class="header-3">
+            <nav>
+                <ul>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img class="logos-redes" src="img/facebook.jpg" alt="imagen de logo de facebook">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img class="logos-redes" src="img/instagram.jpg" alt="imagen de logo de instagram">
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <img class="logos-redes" src="img/twitter.jpg" alt="imagen de logo de twitter">
+                    </a>
+                </ul>
+            </nav>
+        </div>
+        <div class="botonera-principal">
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html"> HOME </a></li>
+                    <li><a href="listado-de-enfermedades.html">ENFERMEDADES </a></li>
+                    <li><a href="calendario.html"> VACUNACIÓN </a></li>
+                    <li> <a href="mapa.html"> HOSPITALES</a></li>
+                    <li><a href="contacto.html"> CONTACTO</a></li>
+                </ul>
+            </nav>
+            <a class="desplegable">
+                <p id="menu-hamb"></p>
+            </a>
+        </div>
+        <div class="contenedor-buscador">
+            <a href="#">
+                <i class="fas fa-search"></i>
+            </a>
+            <div class="buscador-2">
+                <label><input id="filtrar-datalist" list="browsers" name="myBrowser"
+                        placeholder="  Filtrar por enfermedad"></label>
+                <datalist>
+                    <option value="Dengue">
+                    <option value="Varicela">
+                    <option value="Covid-19">
+                    <option value="Neumonía">
+                    <option value="Sarampión">
+                </datalist>
+            </div>
+        </div>
+
+        <div class="titulo-enfermedades">
+            <h1>ENFERMEDADES</h1>
+        </div>
+        <div class="enfermedad-1">
+            <img class="imagen-listado" src="img/dengue.jpg" alt="dengue">
+        </div>
+        <div class="enfermedad-1-1">
+            <h3>Dengue</h3>
+            <br>
+            <p>Es una infección viral transmitida por la picadura de las hembras infectadas de mosquitos del género
+                Aedes. El síntoma más común del dengue es la fiebre junto a cualquiera de los siguientes: Náuseas,
+                vómitos. Sarpullido. Molestias y dolores (dolor en los ojos, generalmente detrás de los ojos, dolor
+                muscular, dolor en las articulaciones o dolor en los huesos). Tiene un período de incubación de
+                entre 3 a 15 días.</p>
+            <br>
+            <a href="detalle-de-la-enfermedad-covid-19.html"> <input class="botones" type="submit"
+                    value="Ver Detalle"></a>
+        </div>
+        <div class="enfermedad-2">
+            <img class="imagen-listado" src="img/varicela.jpg" alt="varicela">
+        </div>
+        <div class="enfermedad-2-1">
+            <br>
+            <h3>Varicela</h3>
+            <br>
+            <p>Infección viral que provoca un sarpullido similar a las ampollas en la piel y que da comezón. La
+                varicela puede resultar contagiosa para aquellas personas que no hayan sufrido la enfermedad o que
+                no se hayan vacunado, desde dos días antes de la erupción. El síntoma más característico es un
+                sarpullido con picazón similar a una ampolla en la piel. El virus solo se transmite de persona a
+                persona, ya sea por contacto directo.</p>
+            <br>
+            <a href="detalle-de-la-enfermedad-covid-19.html"> <input class="botones" type="submit"
+                    value="Ver Detalle"></a>
+        </div>
+        <div class="enfermedad-3">
+            <img class="imagen-listado" src="img/covid-19.png" alt="covid 19">
+        </div>
+        <div class="enfermedad-3-1">
+            <br>
+            <h3>Covid-19</h3>
+            <br>
+            <p>Es la enfermedad infecciosa causada por el coronavirus que se ha descubierto más recientemente.Los
+                síntomas más habituales de la COVID-19 son la fiebre, la tos seca y el cansancio. Otros síntomas
+                menos frecuentes que afectan a algunos pacientes son los dolores y molestias, la congestión nasal,
+                el dolor de cabeza, la conjuntivitis, el dolor de garganta, la diarrea, la pérdida del gusto o el
+                olfato y las erupciones cutáneas.</p>
+            <br>
+            <a href="detalle-de-la-enfermedad-covid-19.html"> <input class="botones" type="submit"
+                    value="Ver Detalle"></a>
+        </div>
+        <div class="enfermedad-4">
+            <img class="imagen-listado" src="img/neumonia.jpeg" alt="neumonia">
+        </div>
+        <div class="enfermedad-4-1">
+            <br>
+            <h3>Neumonía</h3>
+            <br>
+            <p>Es una infección que inflama los sacos aéreos de uno o los dos pulmones. A consecuencia de ella
+                aparecen síntomas como tos con flema o pus, dolor en el pecho, fatiga, escalofríos, dificultad para
+                respirar o fiebre. Es posible reducir el riesgo de aparición de la neumonía si se siguen algunas
+                medidas preventivas.El período de incubación también esta determinado por el germen que la cause,
+                este puede ir de 18 horas a 6 días.</p>
+            <br>
+            <a href="detalle-de-la-enfermedad-covid-19.html"> <input class="botones" type="submit"
+                    value="Ver Detalle"></a>
+        </div>
+        <div class="enfermedad-5">
+            <img class="imagen-listado" src="img/sarampion.jpg" alt="sarampion">
+        </div>
+        <div class="enfermedad-5-1">
+            <br>
+            <h3>Sarampión</h3>
+            <br>
+            <p>Infección viral de fácil prevención mediante una vacuna.La enfermedad se propaga rápidamente por el
+                aire mediante pequeñas gotas de saliva al toser o estornudar. Los síntomas del sarampión no aparecen
+                hasta diez o catorce días después de la exposición. Los síntomas incluyen tos, secreción nasal,
+                inflamación de los ojos, dolor de garganta, fiebre y un sarpullido rojo y con manchas en la piel.
+            </p>
+            <br>
+            <a href="detalle-de-la-enfermedad-covid-19.html"> <input class="botones" type="submit"
+                    value="Ver Detalle"></a>
+        </div>
+        <div class="footer-1">
+            <h4>Datos de Grupos:</h4>
+            <br>
+            <ul>
+                <p>Anna Tamara Romanczuk - 36.156.277</p>
+                <p>Ivanna Nicole Tkaczuk - 35.722.757</p>
+                <p>Lautaro Ignacio Filippini - 36.075.122</p>
+            </ul>
+        </div>
+        <div class="footer-2">
+            <h4>Menú Inferior:</h4>
+            <br>
+            <ul>
+                <a href="index.html">Home</a> <br>
+                <a href="listado-de-enfermedades.html">Enfermedades</a><br>
+                <a href="calendario.html">Vacunas</a><br>
+                <a href="mapa.html">Hospitales</a><br>
+                <a href="contacto.html">Contacto</a><br>
+            </ul>
+        </div>
+        <div class="footer-3">
+            <h4>Redes Sociales:</h4>
+            <br>
+            <nav>
+                <ul>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img class="logos-redes" src="img/facebook.jpg" alt="imagen de logo de facebook">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img class="logos-redes" src="img/instagram.jpg" alt="imagen de logo de instagram">
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <img class="logos-redes" src="img/twitter.jpg" alt="imagen de logo de twitter">
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="js/funcionscroll.js"></script>
+</body>
+
+</html>

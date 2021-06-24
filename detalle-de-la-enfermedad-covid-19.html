@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/grid-area-covid.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/36c47e5d47.js" crossorigin="anonymous"></script>
+    <title>Intermedic</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="header-1">
+            <img class="logo-img" src="img/logo-blanco.png" alt="imagen de logo">
+        </div>
+        <div class="header-2">
+            <label><input list="browsers" name="myBrowser"></label>
+            <datalist id="browsers">
+                <option value="Dengue">
+                <option value="Varicela">
+                <option value="Covid-19">
+                <option value="Neumonía">
+                <option value="Sarampión">
+            </datalist>
+            <a href="#">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+        <div class="header-3">
+            <nav>
+                <ul>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img class="logos-redes" src="img/facebook.jpg" alt="imagen de logo de facebook">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img class="logos-redes" src="img/instagram.jpg" alt="imagen de logo de instagram">
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <img class="logos-redes" src="img/twitter.jpg" alt="imagen de logo de twitter">
+                    </a>
+                </ul>
+            </nav>
+        </div>
+        <div class="botonera-principal">
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html"> HOME </a></li>
+                    <li><a href="listado-de-enfermedades.html">ENFERMEDADES </a></li>
+                    <li><a href="calendario.html"> VACUNACIÓN </a></li>
+                    <li> <a href="mapa.html"> HOSPITALES</a></li>
+                    <li><a href="contacto.html"> CONTACTO</a></li>
+                </ul>
+            </nav>
+            <a class="desplegable">
+                <p id="menu-hamb"></p>
+            </a>
+        </div>
+        <div class="titulo-covid">
+            <h1>COVID - 19</h1>
+        </div>
+        <article class="imagen-covid-1">
+            <img id="imagen-covid" src="img/covid-19-2.png" alt="fotografía de coronavirus">
+        </article>
+        <article class="descrip-covid">
+            <p>Es la enfermedad infecciosa causada por el coronavirus que se ha descubierto más recientemente.Los
+                síntomas más habituales del COVID-19 son la fiebre, la tos seca y el cansancio. Otros síntomas menos
+                frecuentes que afectan a algunos pacientes son los dolores y molestias, la congestión nasal,el dolor
+                de cabeza, la conjuntivitis, el dolor de garganta, la diarrea, la pérdida del gusto o el olfato y
+                las erupciones cutáneas o cambios de color en los dedos de las manos o los pies. Estos síntomas
+                suelen ser leves y comienzan gradualmente. Algunas de las personas infectadas solopresentan síntomas
+                levísimos. La mayoría de las personas (alrededor del 80%) se recuperan de la enfermedad sin
+                necesidad de tratamiento hospitalario. Alrededor de 1 de cada 5 personas que contraen la COVID‑19
+                acaba presentando un cuadro grave y experimenta dificultades para respirar. Las personas mayores y
+                las que padecen afecciones médicas previas como hipertensión arterial, problemas cardiacos o
+                pulmonares, diabetes o cáncer tienen más probabilidades de presentar cuadros graves. Sin embargo,
+                cualquier persona puede contraer la COVID‑19 y caer gravemente enferma. </p>
+        </article>
+        <div class="titulo-form-covid">
+            <h2>FORMULARIO DE DETECCIÓN (TEST) DE CORONAVIRUS COVID</h2>
+        </div>
+        <article class="hola-usuario">
+            <p>Hola usuario! Si tenés síntomas de <strong> Covid-19 </strong> o has estado en contacto con una
+                persona afectada deberías hacer un control y seguimiento diario de tus
+                sintomas.</p>
+            <br><br>
+            <p>Esta aplicación te permitirá hacer un seguimiento de la evolución de los
+                síntomas y te dará las indicaciones y consejos a seguir en cada caso.
+                El uso de este servicio supone la aceptación de los formularios y la política
+                de privacidad descritos en <a href="condiciones.html"><strong>Ver las condiciones y
+                        políticas</strong></a>
+            </p>
+        </article>
+        <article class="titulo-sintomas">
+            <h2>SÍNTOMAS</h2>
+        </article>
+        <article class="sintomas-1">
+
+            <img src="img/24-fiebre-dolor-garganta.png" alt="imagen de fiebre y dolor de garganta">
+
+            <img src="img/25-fiebre-dificultad-respirar.png" alt="imagen de fiebre y dificultad para respirar">
+
+        </article>
+        <article class="sintomas-2">
+            <article class="sintomas-1-1">
+                <img src="img/23-fiebre-tos.png" alt="imagen de fiebre y tos">
+
+            </article>
+            <div class="vacio">
+
+            </div>
+        </article>
+        <div class="formulario">
+            <article class="consulta-sintomas">
+                <form class="formulario" action="#" method="get" onsubmit="return validarDetalle();"
+                    enctype="application/x-www-form-urlencoded">
+                    <p class="campos-obligatorios">*</p><label for="nombre-apellido" class>Nombre y Apellido</label>
+                    <br>
+                    <input type="text" id="nombre-apellido" name="nombre-apellido"
+                        placeholder="Ingrese su nombre y apellido" class="field" />
+                    <br>
+                    <p class="campos-obligatorios">*</p> <label for="dni">DNI </label>
+                    <br>
+                    <input type="text" id="dni" name="dni" placeholder="Ingrese su DNI" class="field" />
+                    <br>
+                    <p class="campos-obligatorios">*</p> <label for="telefono">Telefono </label>
+                    <br>
+                    <input type="text" id="telefono" name="telefono" placeholder="Ingrese su telefono" class="field" />
+                    <br>
+                    <label for="city">Ciudad </label>
+                    <br>
+                    <input type="text" id="city" name="city" placeholder="Ingrese su ciudad" class="field">
+                    <br>
+                    <br>
+                    <p>Sexo </p>
+                    <div class="radio">
+                        <input type="radio" name="sexo" id="masculino" value="m">
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" name="sexo" id="femenino" value="f">
+                        <label for="femenino">Femenino</label>
+                        <br>
+                        <br>
+                        <p>¿Has viajado al exterior de la República Argentina?</p>
+                        <input type="radio" onchange="mostrarOcultarPaises()" id="si" name="sino" value="si">
+                        <label for="si">Si</label>
+                        <input type="radio" onchange="mostrarOcultarPaises()" id="no" name="sino" value="no">
+                        <label for="no">No</label>
+                        <br>
+                        <br>
+                        <div id="paises-visitados">
+                            <p>Paises visitados</p>
+                            <select name="pais" class="field">
+                                <option value="Elegir" id="AF">Elegir opción</option>
+                                <option value="Afganistán" id="AF">Afganistán</option>
+                                <option value="Albania" id="AL">Albania</option>
+                                <option value="Alemania" id="DE">Alemania</option>
+                                <option value="Andorra" id="AD">Andorra</option>
+                                <option value="Angola" id="AO">Angola</option>
+                                <option value="Anguila" id="AI">Anguila</option>
+                                <option value="Antártida" id="AQ">Antártida</option>
+                                <option value="Antigua y Barbuda" id="AG">Antigua y Barbuda</option>
+                                <option value="Antillas holandesas" id="AN">Antillas holandesas</option>
+                                <option value="Arabia Saudí" id="SA">Arabia Saudí</option>
+                                <option value="Argelia" id="DZ">Argelia</option>
+                                <option value="Argentina" id="AR">Argentina</option>
+                                <option value="Armenia" id="AM">Armenia</option>
+                                <option value="Aruba" id="AW">Aruba</option>
+                                <option value="Australia" id="AU">Australia</option>
+                                <option value="Austria" id="AT">Austria</option>
+                                <option value="Azerbaiyán" id="AZ">Azerbaiyán</option>
+                                <option value="Bahamas" id="BS">Bahamas</option>
+                                <option value="Bahrein" id="BH">Bahrein</option>
+                                <option value="Bangladesh" id="BD">Bangladesh</option>
+                                <option value="Barbados" id="BB">Barbados</option>
+                                <option value="Bélgica" id="BE">Bélgica</option>
+                                <option value="Belice" id="BZ">Belice</option>
+                                <option value="Benín" id="BJ">Benín</option>
+                                <option value="Bermudas" id="BM">Bermudas</option>
+                                <option value="Bhután" id="BT">Bhután</option>
+                                <option value="Bielorrusia" id="BY">Bielorrusia</option>
+                                <option value="Birmania" id="MM">Birmania</option>
+                                <option value="Bolivia" id="BO">Bolivia</option>
+                                <option value="Bosnia y Herzegovina" id="BA">Bosnia y Herzegovina</option>
+                                <option value="Botsuana" id="BW">Botsuana</option>
+                                <option value="Brasil" id="BR">Brasil</option>
+                                <option value="Brunei" id="BN">Brunei</option>
+                                <option value="Bulgaria" id="BG">Bulgaria</option>
+                                <option value="Burkina Faso" id="BF">Burkina Faso</option>
+                                <option value="Burundi" id="BI">Burundi</option>
+                                <option value="Cabo Verde" id="CV">Cabo Verde</option>
+                                <option value="Camboya" id="KH">Camboya</option>
+                                <option value="Camerún" id="CM">Camerún</option>
+                                <option value="Canadá" id="CA">Canadá</option>
+                                <option value="Chad" id="TD">Chad</option>
+                                <option value="Chile" id="CL">Chile</option>
+                                <option value="China" id="CN">China</option>
+                                <option value="Chipre" id="CY">Chipre</option>
+                                <option value="Ciudad estado del Vaticano" id="VA">Ciudad estado del Vaticano</option>
+                                <option value="Colombia" id="CO">Colombia</option>
+                                <option value="Comores" id="KM">Comores</option>
+                                <option value="Congo" id="CG">Congo</option>
+                                <option value="Corea" id="KR">Corea</option>
+                                <option value="Corea del Norte" id="KP">Corea del Norte</option>
+                                <option value="Costa del Marfíl" id="CI">Costa del Marfíl</option>
+                                <option value="Costa Rica" id="CR">Costa Rica</option>
+                                <option value="Croacia" id="HR">Croacia</option>
+                                <option value="Cuba" id="CU">Cuba</option>
+                                <option value="Dinamarca" id="DK">Dinamarca</option>
+                                <option value="Djibouri" id="DJ">Djibouri</option>
+                                <option value="Dominica" id="DM">Dominica</option>
+                                <option value="Ecuador" id="EC">Ecuador</option>
+                                <option value="Egipto" id="EG">Egipto</option>
+                                <option value="El Salvador" id="SV">El Salvador</option>
+                                <option value="Emiratos Arabes Unidos" id="AE">Emiratos Arabes Unidos</option>
+                                <option value="Eritrea" id="ER">Eritrea</option>
+                                <option value="Eslovaquia" id="SK">Eslovaquia</option>
+                                <option value="Eslovenia" id="SI">Eslovenia</option>
+                                <option value="España" id="ES">España</option>
+                                <option value="Estados Unidos" id="US">Estados Unidos</option>
+                                <option value="Estonia" id="EE">Estonia</option>
+                                <option value="c" id="ET">Etiopía</option>
+                                <option value="Ex-República Yugoslava de Macedonia" id="MK">Ex-República Yugoslava de
+                                    Macedonia</option>
+                                <option value="Filipinas" id="PH">Filipinas</option>
+                                <option value="Finlandia" id="FI">Finlandia</option>
+                                <option value="Francia" id="FR">Francia</option>
+                                <option value="Gabón" id="GA">Gabón</option>
+                                <option value="Gambia" id="GM">Gambia</option>
+                                <option value="Georgia" id="GE">Georgia</option>
+                                <option value="Georgia del Sur y las islas Sandwich del Sur" id="GS">Georgia del Sur y
+                                    las
+                                    islas Sandwich del Sur</option>
+                                <option value="Ghana" id="GH">Ghana</option>
+                                <option value="Gibraltar" id="GI">Gibraltar</option>
+                                <option value="Granada" id="GD">Granada</option>
+                                <option value="Grecia" id="GR">Grecia</option>
+                                <option value="Groenlandia" id="GL">Groenlandia</option>
+                                <option value="Guadalupe" id="GP">Guadalupe</option>
+                                <option value="Guam" id="GU">Guam</option>
+                                <option value="Guatemala" id="GT">Guatemala</option>
+                                <option value="Guayana" id="GY">Guayana</option>
+                                <option value="Guayana francesa" id="GF">Guayana francesa</option>
+                                <option value="Guinea" id="GN">Guinea</option>
+                                <option value="Guinea Ecuatorial" id="GQ">Guinea Ecuatorial</option>
+                                <option value="Guinea-Bissau" id="GW">Guinea-Bissau</option>
+                                <option value="Haití" id="HT">Haití</option>
+                                <option value="Holanda" id="NL">Holanda</option>
+                                <option value="Honduras" id="HN">Honduras</option>
+                                <option value="Hong Kong R. A. E" id="HK">Hong Kong R. A. E</option>
+                                <option value="Hungría" id="HU">Hungría</option>
+                                <option value="India" id="IN">India</option>
+                                <option value="Indonesia" id="ID">Indonesia</option>
+                                <option value="Irak" id="IQ">Irak</option>
+                                <option value="Irán" id="IR">Irán</option>
+                                <option value="Irlanda" id="IE">Irlanda</option>
+                                <option value="Isla Bouvet" id="BV">Isla Bouvet</option>
+                                <option value="Isla Christmas" id="CX">Isla Christmas</option>
+                                <option value="Isla Heard e Islas McDonald" id="HM">Isla Heard e Islas McDonald</option>
+                                <option value="Islandia" id="IS">Islandia</option>
+                                <option value="Islas Caimán" id="KY">Islas Caimán</option>
+                                <option value="Islas Cook" id="CK">Islas Cook</option>
+                                <option value="Islas de Cocos o Keeling" id="CC">Islas de Cocos o Keeling</option>
+                                <option value="Islas Faroe" id="FO">Islas Faroe</option>
+                                <option value="Islas Fiyi" id="FJ">Islas Fiyi</option>
+                                <option value="Islas Malvinas Islas Falkland" id="FK">Islas Malvinas Islas Falkland
+                                </option>
+                                <option value="Islas Marianas del norte" id="MP">Islas Marianas del norte</option>
+                                <option value="Islas Marshall" id="MH">Islas Marshall</option>
+                                <option value="Islas menores de Estados Unidos" id="UM">Islas menores de Estados Unidos
+                                </option>
+                                <option value="Islas Palau" id="PW">Islas Palau</option>
+                                <option value="Islas Salomón" d="SB">Islas Salomón</option>
+                                <option value="Islas Tokelau" id="TK">Islas Tokelau</option>
+                                <option value="Islas Turks y Caicos" id="TC">Islas Turks y Caicos</option>
+                                <option value="Islas Vírgenes EE.UU." id="VI">Islas Vírgenes EE.UU.</option>
+                                <option value="Islas Vírgenes Reino Unido" id="VG">Islas Vírgenes Reino Unido</option>
+                                <option value="Israel" id="IL">Israel</option>
+                                <option value="Italia" id="IT">Italia</option>
+                                <option value="Jamaica" id="JM">Jamaica</option>
+                                <option value="Japón" id="JP">Japón</option>
+                                <option value="Jordania" id="JO">Jordania</option>
+                                <option value="Kazajistán" id="KZ">Kazajistán</option>
+                                <option value="Kenia" id="KE">Kenia</option>
+                                <option value="Kirguizistán" id="KG">Kirguizistán</option>
+                                <option value="Kiribati" id="KI">Kiribati</option>
+                                <option value="Kuwait" id="KW">Kuwait</option>
+                                <option value="Laos" id="LA">Laos</option>
+                                <option value="Lesoto" id="LS">Lesoto</option>
+                                <option value="Letonia" id="LV">Letonia</option>
+                                <option value="Líbano" id="LB">Líbano</option>
+                                <option value="Liberia" id="LR">Liberia</option>
+                                <option value="Libia" id="LY">Libia</option>
+                                <option value="Liechtenstein" id="LI">Liechtenstein</option>
+                                <option value="Lituania" id="LT">Lituania</option>
+                                <option value="Luxemburgo" id="LU">Luxemburgo</option>
+                                <option value="Macao R. A. E" id="MO">Macao R. A. E</option>
+                                <option value="Madagascar" id="MG">Madagascar</option>
+                                <option value="Malasia" id="MY">Malasia</option>
+                                <option value="Malawi" id="MW">Malawi</option>
+                                <option value="Maldivas" id="MV">Maldivas</option>
+                                <option value="Malí" id="ML">Malí</option>
+                                <option value="Malta" id="MT">Malta</option>
+                                <option value="Marruecos" id="MA">Marruecos</option>
+                                <option value="Martinica" id="MQ">Martinica</option>
+                                <option value="Mauricio" id="MU">Mauricio</option>
+                                <option value="Mauritania" id="MR">Mauritania</option>
+                                <option value="Mayotte" id="YT">Mayotte</option>
+                                <option value="México" id="MX">México</option>
+                                <option value="Micronesia" id="FM">Micronesia</option>
+                                <option value="Moldavia" id="MD">Moldavia</option>
+                                <option value="Mónaco" id="MC">Mónaco</option>
+                                <option value="Mongolia" id="MN">Mongolia</option>
+                                <option value="Montserrat" id="MS">Montserrat</option>
+                                <option value="Mozambique" id="MZ">Mozambique</option>
+                                <option value="Namibia" id="NA">Namibia</option>
+                                <option value="Nauru" id="NR">Nauru</option>
+                                <option value="Nepal" id="NP">Nepal</option>
+                                <option value="Nicaragua" id="NI">Nicaragua</option>
+                                <option value="Níger" id="NE">Níger</option>
+                                <option value="Nigeria" id="NG">Nigeria</option>
+                                <option value="Niue" id="NU">Niue</option>
+                                <option value="Norfolk" id="NF">Norfolk</option>
+                                <option value="Noruega" id="NO">Noruega</option>
+                                <option value="Nueva Caledonia" id="NC">Nueva Caledonia</option>
+                                <option value="Nueva Zelanda" id="NZ">Nueva Zelanda</option>
+                                <option value="Omán" id="OM">Omán</option>
+                                <option value="Panamá" id="PA">Panamá</option>
+                                <option value="Papua Nueva Guinea" id="PG">Papua Nueva Guinea</option>
+                                <option value="Paquistán" id="PK">Paquistán</option>
+                                <option value="Paraguay" id="PY">Paraguay</option>
+                                <option value="Perú" id="PE">Perú</option>
+                                <option value="Pitcairn" id="PN">Pitcairn</option>
+                                <option value="Polinesia francesa" id="PF">Polinesia francesa</option>
+                                <option value="Polonia" id="PL">Polonia</option>
+                                <option value="Portugal" id="PT">Portugal</option>
+                                <option value="Puerto Rico" id="PR">Puerto Rico</option>
+                                <option value="Qatar" id="QA">Qatar</option>
+                                <option value="Reino Unido" id="UK">Reino Unido</option>
+                                <option value="República Centroafricana" id="CF">República Centroafricana</option>
+                                <option value="República Checa" id="CZ">República Checa</option>
+                                <option value="República de Sudáfrica" id="ZA">República de Sudáfrica</option>
+                                <option value="República Democrática del Congo Zaire" id="CD">República Democrática del
+                                    Congo Zaire</option>
+                                <option value="República Dominicana" id="DO">República Dominicana</option>
+                                <option value="Reunión" id="RE">Reunión</option>
+                                <option value="Ruanda" id="RW">Ruanda</option>
+                                <option value="Rumania" id="RO">Rumania</option>
+                                <option value="Rusia" id="RU">Rusia</option>
+                                <option value="Samoa" id="WS">Samoa</option>
+                                <option value="Samoa occidental" id="AS">Samoa occidental</option>
+                                <option value="San Kitts y Nevis" id="KN">San Kitts y Nevis</option>
+                                <option value="San Marino" id="SM">San Marino</option>
+                                <option value="San Pierre y Miquelon" id="PM">San Pierre y Miquelon</option>
+                                <option value="San Vicente e Islas Granadinas" id="VC">San Vicente e Islas Granadinas
+                                </option>
+                                <option value="Santa Helena" id="SH">Santa Helena</option>
+                                <option value="Santa Lucía" id="LC">Santa Lucía</option>
+                                <option value="Santo Tomé y Príncipe" id="ST">Santo Tomé y Príncipe</option>
+                                <option value="Senegal" id="SN">Senegal</option>
+                                <option value="Serbia y Montenegro" id="YU">Serbia y Montenegro</option>
+                                <option value="Sychelles" id="SC">Seychelles</option>
+                                <option value="Sierra Leona" id="SL">Sierra Leona</option>
+                                <option value="Singapur" id="SG">Singapur</option>
+                                <option value="Siria" id="SY">Siria</option>
+                                <option value="Somalia" id="SO">Somalia</option>
+                                <option value="Sri Lanka" id="LK">Sri Lanka</option>
+                                <option value="Suazilandia" id="SZ">Suazilandia</option>
+                                <option value="Sudán" id="SD">Sudán</option>
+                                <option value="Suecia" id="SE">Suecia</option>
+                                <option value="Suiza" id="CH">Suiza</option>
+                                <option value="Surinam" id="SR">Surinam</option>
+                                <option value="Svalbard" id="SJ">Svalbard</option>
+                                <option value="Tailandia" id="TH">Tailandia</option>
+                                <option value="Taiwán" id="TW">Taiwán</option>
+                                <option value="Tanzania" id="TZ">Tanzania</option>
+                                <option value="Tayikistán" id="TJ">Tayikistán</option>
+                                <option value="Territorios británicos del océano Indico" id="IO">Territorios británicos
+                                    del
+                                    océano Indico</option>
+                                <option value="Territorios franceses del sur" id="TF">Territorios franceses del sur
+                                </option>
+                                <option value="Timor Oriental" id="TP">Timor Oriental</option>
+                                <option value="Togo" id="TG">Togo</option>
+                                <option value="Tonga" id="TO">Tonga</option>
+                                <option value="Trinidad y Tobago" id="TT">Trinidad y Tobago</option>
+                                <option value="Túnez" id="TN">Túnez</option>
+                                <option value="Turkmenistán" id="TM">Turkmenistán</option>
+                                <option value="Turquía" id="TR">Turquía</option>
+                                <option value="Tuvalu" id="TV">Tuvalu</option>
+                                <option value="Ucrania" id="UA">Ucrania</option>
+                                <option value="Uganda" id="UG">Uganda</option>
+                                <option value="Uruguay" id="UY">Uruguay</option>
+                                <option value="Uzbekistán" id="UZ">Uzbekistán</option>
+                                <option value="Vanuatu" id="VU">Vanuatu</option>
+                                <option value="Venezuela" id="VE">Venezuela</option>
+                                <option value="Vietnam" id="VN">Vietnam</option>
+                                <option value="Wallis y Futuna" id="WF">Wallis y Futuna</option>
+                                <option value="Yemen" id="YE">Yemen</option>
+                                <option value="Zambia" id="ZM">Zambia</option>
+                                <option value="Zimbabue" id="ZW">Zimbabue</option>
+                            </select>
+                        </div>
+                        <br>
+                        <br>
+                        <p id="por-favor">Por favor, indica los síntomas que presentas:</p>
+                        <br>
+                        <p class="campos-obligatorios">*</p>
+                        <p>¿Tuviste fiebre mayor a 38 grados?</p>
+                        <input type="radio" id="si1" name="si" value="si">
+                        <label for="si1">Si</label>
+                        <input type="radio" id="no1" name="si" value="no">
+                        <label for="no1">No</label>
+                        <br>
+                        <br>
+                        <p class="campos-obligatorios">*</p>
+                        <p>¿Tuviste dolor de cabeza?</p>
+                        <input type="radio" id="si2" name="sino1" value="si">
+                        <label for="si2">Si</label>
+                        <input type="radio" id="no2" name="sino1" value="no">
+                        <label for="no2">No</label>
+                        <br>
+                        <br>
+                        <p class="campos-obligatorios">*</p>
+                        <p>¿Tuviste una tos persistente?</p>
+                        <input type="radio" id="si3" name="sino2" value="si">
+                        <label for="si3">Si</label>
+                        <input type="radio" id="no3" name="sino2" value="no">
+                        <label for="no3">No</label>
+                        <br>
+                        <br>
+                        <p class="campos-obligatorios">*</p>
+                        <p>¿Tuviste dolor de garganta?</p>
+                        <input type="radio" id="si4" name="sino3" value="si">
+                        <label for="si4">Si</label>
+                        <input type="radio" id="no4" name="sino3" value="no">
+                        <label for="no4">No</label>
+                        <br>
+                        <br>
+                        <p class="campos-obligatorios">*</p>
+                        <p>¿Tuviste dificultad para respirar?</p>
+                        <input type="radio" onchange="mostrarOcultarCiudad()" id="si5" name="sino4" value="si">
+                        <label for="si5">Si</label>
+                        <input type="radio" onchange="mostrarOcultarCiudad()" id="no5" name="sino4" value="no">
+                        <label for="no5">No</label>
+                        <br>
+                        <br>
+                        <p class="campos-obligatorios">* campos obligatorios</p>
+                        <br>
+                    </div>
+                    <br>
+                    <div id="dificultad-respirar">
+                        <label for="direccion">Dirección </label>
+                        <input id="direccion" class="field" type="text" name="direccion"
+                            placeholder="Ingrese su Direccion">
+                        <br>
+                        <label for="ciudad">Ciudad </label>
+                        <input id="ciudad" class="field" type="text" name="ciudad" placeholder="Ingrese su Ciudad">
+                    </div>
+                    <div>
+                        <input id="enviar-test" type="submit" value="ENVIAR TEST">
+                        <div id="mensaje-detalle" class="error"></div>
+                        <div id="mensaje-sintomas" class="error"></div>
+                    </div>
+                </form>
+
+            </article>
+        </div>
+        <div class="titulo-medidas">
+            <h2>MEDIDAS DE PRECAUCIÓN</h2>
+        </div>
+        <div class="medidas-precaucion">
+
+            <img src="img/14-lavarse-manos.png" alt="imagen de lavado de manos">
+
+            <img src="img/16-tocar-nariz.png" alt="imagen de no llevar manos a la nariz, ojos o boca">
+
+            <img src="img/15-estornudar.png" alt="imagen de estornudar sobre el pliegue del codo">
+
+            <img src="img/17-ventilar.png" alt="imagen de ventilar los ambientes">
+
+        </div>
+        <div class="medidas-precaucion-2">
+
+            <img src="img/20-reducir-contacto.png" alt="imagen de reducir el contacto físico">
+
+            <img src="img/19-permanecer-domicilio.png" alt="imagen de permanecé en tu domicilio">
+
+
+            <img src="img/21-no-compartir-mate.png" alt="imagen de no compartir objetos personales">
+
+
+            <img src="img/18-limpiar-objetos.png" alt="imagen de limpia objetos con frecuencia">
+        </div>
+        <div class="titulo-mapa">
+            <h2>HOSPITAL MÁS CERCANO ESPECIALIZADO EN COVID-19</h2>
+        </div>
+        <div class="hospital-covid">
+            <article class="info-hospital">
+                <h3>Hospital Italiano de Buenos Aires</h3>
+                <P>(011) 45959-0200</P>
+                <P>Pres. Tte. Gral. Juan Domingo Perón 4190</P>
+                <p>Almagro</p>
+                <br>
+                <img id="imagen-hosp-italiano" src="img/hospital-italiano.jpg" alt="fotografía del hospital italiano">
+            </article>
+        </div>
+        <div class="ubicacion">
+            <nav>
+                <iframe class="mapa-ubicacion"
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13123.963276215105!2d-58.565810552542594!3d-34.68018118287168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospitales!5e0!3m2!1ses-419!2sar!4v1601311587539!5m2!1ses-419!2sar"
+                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </nav>
+        </div>
+        <div class="footer-1">
+            <h4>Datos de Grupos:</h4>
+            <br>
+            <ul>
+                <p>Anna Tamara Romanczuk - 36.156.277</p>
+                <p>Ivanna Nicole Tkaczuk - 35.722.757</p>
+                <p>Lautaro Ignacio Filippini - 36.075.122</p>
+            </ul>
+        </div>
+        <div class="footer-2">
+            <h4>Menú Inferior:</h4>
+            <br>
+            <ul>
+                <a href="index.html">Home</a> <br>
+                <a href="listado-de-enfermedades.html">Enfermedades</a><br>
+                <a href="calendario.html">Vacunas</a><br>
+                <a href="mapa.html">Hospitales</a><br>
+                <a href="contacto.html">Contacto</a><br>
+            </ul>
+        </div>
+        <article class="footer-3">
+            <h4>Redes Sociales:</h4>
+            <br>
+            <nav>
+                <ul>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img class="logos-redes" src="img/facebook.jpg" alt="imagen de logo de facebook">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img class="logos-redes" src="img/instagram.jpg" alt="imagen de logo de instagram">
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <img class="logos-redes" src="img/twitter.jpg" alt="imagen de logo de twitter">
+                    </a>
+                </ul>
+            </nav>
+        </article>
+    </div>
+    <script src="js/validar-detalle.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="js/funcionscroll.js"></script>
+</body>
+
+</html>

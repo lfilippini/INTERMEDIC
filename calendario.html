@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
+    <link href='fullcalendar/core/main.css' rel='stylesheet' />
+    <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/grid-area-calendario.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src='fullcalendar/core/main.js'></script>
+    <script src='fullcalendar/daygrid/main.js'></script>
+    <script src="https://kit.fontawesome.com/36c47e5d47.js" crossorigin="anonymous"></script>
+    <title>Intermedic</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="header-1">
+            <img class="logo-img" src="img/logo-blanco.png" alt="imagen de logo">
+        </div>
+        <div class="header-2">
+            <label><input list="browsers" name="myBrowser"></label>
+            <datalist id="browsers">
+                <option value="Dengue">
+                <option value="Varicela">
+                <option value="Covid-19">
+                <option value="Neumonía">
+                <option value="Sarampión">
+            </datalist>
+            <a href="#">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+        <div class="header-3">
+            <nav>
+                <ul>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img class="logos-redes" src="img/facebook.jpg" alt="imagen de logo de facebook">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img class="logos-redes" src="img/instagram.jpg" alt="imagen de logo de instagram">
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <img class="logos-redes" src="img/twitter.jpg" alt="imagen de logo de twitter">
+                    </a>
+                </ul>
+            </nav>
+        </div>
+        <div class="botonera-principal">
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html"> HOME </a></li>
+                    <li><a href="listado-de-enfermedades.html">ENFERMEDADES </a></li>
+                    <li><a href="calendario.html"> VACUNACIÓN </a></li>
+                    <li> <a href="mapa.html"> HOSPITALES</a></li>
+                    <li><a href="contacto.html"> CONTACTO</a></li>
+                </ul>
+            </nav>
+            <a class="desplegable">
+                <p id="menu-hamb"></p>
+            </a>
+        </div>
+
+        <div class="contenedor-calendario">
+            <h2 id="titulo-calendario"> CALENDARIO DE VACUNACIÓN</h2>
+            <article id="calendario"></article>
+        </div>
+
+        <div class="footer-1">
+            <h4>Datos de Grupos:</h4>
+            <br>
+            <ul>
+                <p>Anna Tamara Romanczuk - 36.156.277</p>
+                <p>Ivanna Nicole Tkaczuk - 35.722.757</p>
+                <p>Lautaro Ignacio Filippini - 36.075.122</p>
+            </ul>
+        </div>
+        <div class="footer-2">
+            <h4>Menú Inferior:</h4>
+            <br>
+            <ul>
+                <a href="index.html">Home</a> <br>
+                <a href="listado-de-enfermedades.html">Enfermedades</a><br>
+                <a href="calendario.html">Vacunas</a><br>
+                <a href="mapa.html">Hospitales</a><br>
+                <a href="contacto.html">Contacto</a><br>
+            </ul>
+        </div>
+        <article class="footer-3">
+            <h4>Redes Sociales:</h4>
+            <br>
+            <nav>
+                <ul>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img class="logos-redes" src="img/facebook.jpg" alt="imagen de logo de facebook">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img class="logos-redes" src="img/instagram.jpg" alt="imagen de logo de instagram">
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <img class="logos-redes" src="img/twitter.jpg" alt="imagen de logo de twitter">
+                    </a>
+                </ul>
+            </nav>
+        </article>
+
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="js/funcionscroll.js"></script>
+    <script src="js/calendario.js"></script>
+</body>
+
+</html>

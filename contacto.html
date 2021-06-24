@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/grid-area-contacto.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/36c47e5d47.js" crossorigin="anonymous"></script>
+    <title>Intermedic</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="header-1">
+            <img class="logo-img" src="img/logo-blanco.png" alt="imagen de logo">
+        </div>
+        <div class="header-2">
+            <label><input list="browsers" name="myBrowser"></label>
+            <datalist id="browsers">
+                <option value="Dengue">
+                <option value="Varicela">
+                <option value="Covid-19">
+                <option value="Neumonía">
+                <option value="Sarampión">
+            </datalist>
+            <a href="#">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+        <div class="header-3">
+            <nav>
+                <ul>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img class="logos-redes" src="img/facebook.jpg" alt="imagen de logo de facebook">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img class="logos-redes" src="img/instagram.jpg" alt="imagen de logo de instagram">
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <img class="logos-redes" src="img/twitter.jpg" alt="imagen de logo de twitter">
+                    </a>
+                </ul>
+            </nav>
+        </div>
+        <div class="botonera-principal">
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html"> HOME </a></li>
+                    <li><a href="listado-de-enfermedades.html">ENFERMEDADES </a></li>
+                    <li><a href="calendario.html"> VACUNACIÓN </a></li>
+                    <li> <a href="mapa.html"> HOSPITALES</a></li>
+                    <li><a href="contacto.html"> CONTACTO</a></li>
+                </ul>
+            </nav>
+            <a class="desplegable">
+                <p id="menu-hamb"></p>
+            </a>
+        </div>
+        <div class="formularios-contacto">
+
+            <h2 id="titulo-contacto">CONTACTO</h2>
+            <br>
+            <form action="#" name="form" onsubmit="return validar();">
+                <label for="nombre-apellido" class></label>
+                <br>
+                <input type="text" id="nombre-apellido" name="nombre-apellido"
+                    placeholder="Ingrese su nombre y apellido *" class="field" />
+                <br><br>
+                <label for="correo"></label>
+                <input type="email" id="correo" name="correo" placeholder="Ingrese su correo electrónico *"
+                    class="field">
+                <br>
+                <label for="telefono"></label>
+                <br>
+                <input type="text" id="telefono" name="telefono" placeholder="Ingrese su teléfono *" class="field" />
+                <br><br>
+                <textarea class="field" name="message" id="contacto" cols="30" rows="5"
+                    placeholder="Ingrese su consulta" onkeyup="contarCaracteres(this);"></textarea>
+                <p id="numCar"></p>
+                <br><br>
+                <input type="submit" value="Enviar" class="botones">
+                <br>
+                <p class="campos-obligatorios">* campos obligatorios</p>
+                <br>
+                <div id="mensaje" class="error"></div>
+            </form>
+
+        </div>
+        <div class="datos-contacto">
+            <h2 id="titulo-datos">DATOS DE CONTACTO</h2><br><br>
+            <p id="contacto">Dirección: Florencio Varela 1903</p><br>
+            <p id="contacto">Teléfono: (011)4555-4455</p><br>
+            <p id="contacto">Celular: 15-4555-5554</p><br>
+            <p id="contacto">Email: dwebpage@alumno.unlam.edu.ar</p><br>
+            <p id="contacto">Web:</p><br>
+        </div>
+        <div class="redes-sociales">
+            <nav>
+                <ul>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img class="logos-redes" src="img/facebook.jpg" alt="imagen de logo de facebook">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img class="logos-redes" src="img/instagram.jpg" alt="imagen de logo de instagram">
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <img class="logos-redes" src="img/twitter.jpg" alt="imagen de logo de twitter">
+                    </a>
+                </ul>
+            </nav>
+        </div>
+        <div class="ubicacion">
+            <h2 id="titulo-mapa">MAPA DE HOSPITALES DISPONIBLES</h2>
+            <nav>
+                <iframe class="mapa-ubicacion"
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13123.963276215105!2d-58.565810552542594!3d-34.68018118287168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospitales!5e0!3m2!1ses-419!2sar!4v1601311587539!5m2!1ses-419!2sar"
+                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </nav>
+        </div>
+        <div class="footer-1">
+            <h4>Datos de Grupos:</h4>
+            <br>
+            <ul>
+                <p>Anna Tamara Romanczuk - 36.156.277</p>
+                <p>Ivanna Nicole Tkaczuk - 35.722.757</p>
+                <p>Lautaro Ignacio Filippini - 36.075.122</p>
+            </ul>
+        </div>
+        <div class="footer-2">
+            <h4>Menú Inferior:</h4>
+            <br>
+            <ul>
+                <a href="index.html">Home</a> <br>
+                <a href="listado-de-enfermedades.html">Enfermedades</a><br>
+                <a href="calendario.html">Vacunas</a><br>
+                <a href="mapa.html">Hospitales</a><br>
+                <a href="contacto.html">Contacto</a><br>
+            </ul>
+        </div>
+        <article class="footer-3">
+            <h4>Redes Sociales:</h4>
+            <br>
+            <nav>
+                <ul>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img class="logos-redes" src="img/facebook.jpg" alt="imagen de logo de facebook">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img class="logos-redes" src="img/instagram.jpg" alt="imagen de logo de instagram">
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <img class="logos-redes" src="img/twitter.jpg" alt="imagen de logo de twitter">
+                    </a>
+                </ul>
+            </nav>
+        </article>
+    </div>
+    <script src="js/validar-contacto.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="js/funcionscroll.js"></script>
+</body>
+
+</html>
